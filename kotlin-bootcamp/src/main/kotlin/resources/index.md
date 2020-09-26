@@ -80,6 +80,11 @@ The following Kotlin programming constructs are similar to those in other langua
     Arrays and lists can be nested.
     You can create loops with for, while, do/while, and repeat.
     The when statement is Kotlin's version of the switch statement, but when is more flexible.
+#### Links to other language Constructs    
+1. [Kotlin Variables](Variables.md)    
+2. [Kotlin Operators](Operators.md)
+3. [Control FLow Structures](ControlFlow.md)
+4. [Kotlin Functions](Functions.md)
 
 ### Resources and References
 1. [Android 11 weeks challenge](https://developer.android.com/courses/topics/android-11-weeks)

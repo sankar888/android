@@ -1,9 +1,9 @@
-/**
- * Control flow statements
- */
-//for, while, do..while
-//if, if..else, when
+### Kotlin Control FLow Statements
 
+#### if, if..else
+In Kotlin, Is statement can be used as both as a traditional if conditional statement and as an assignment statement
+The below example describes usage of <code>if</code> statement in detail 
+```kotlin
 fun usageIf() {
     //if can be used as control statement like below
     if (5 > 3) println("if without braces in a single line")
@@ -41,7 +41,10 @@ fun usageIf() {
     }
     println(maxWord)
 }
-
+```
+#### When
+<code>when</code> statement can be used as both statement and as control statement. When can be used as <code>switch</code> statement in other languages 
+```kotlin
 fun usageWhen() {
    //When can be used as a statement as well as control statement
    var no : Int = 7
@@ -75,10 +78,11 @@ fun usageWhen() {
     }
     println(res)
 }
+```
 
-/*
- * Loops
-*/
+#### For loops
+<code>for</code> loop iterates through anything that provides an iterator
+```kotlin
 fun usageFor() {
 //for loop iterates through anything that provides an iterator
 //basic usage: for (item in collection) print(item)
@@ -105,7 +109,10 @@ fun usageFor() {
     // 1 ... b
     // 2 ... c
 }
+```
 
+#### While Loop
+```kotlin
 fun usageWhile() {
     /*while (x > 0) {
         x--
@@ -128,3 +135,4 @@ fun usageWhile() {
     } while (b > 0)
     //prints 4321
 }
+```

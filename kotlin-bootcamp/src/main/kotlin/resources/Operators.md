@@ -1,9 +1,6 @@
-//Kotlin Operators
-/*
-Mathematical Operators:
-------------------------
- */
-
+### Kotlin Operators
+#### Arithmetic Operators
+```kotlin
 //Addition
 var res = 1 + 2
 
@@ -23,18 +20,19 @@ var res6 = 1/0 //results in error
 var res7 = 1/3 //res is 1
 var res8 = 4%2 //res is 0
 
-/*
-Assigment Operators
- */
+```
+
+#### Assignment Operators
+```kotlin
 // = , +=, -=, *=, %=
 var a0 = 1
 a0 += 1 //res is 2, works fine
 
 //var a1 += 2 //will not work
+``` 
 
-/*
-Logical Operators
- */
+#### Logical Operators
+```kotlin
 // ==, != , < , > <=, >=,
 1.0 == 1 //throws Error since only same type of variables can be compared
 //the same applies to all operators. Only same type of variables or values can be used in an operation, since there is no implicit casting or autoboxing in kotlin
@@ -45,17 +43,18 @@ val notOk = false
 var c0 : Boolean = ok && notOk //false
 ok || notOk //true
 !ok //return true
+```
 
-//++, --, -, +,
+#### Other Operators
+##### ++, --, -, +, 
+##### in - operator
+In is used check if a value exists in a collections / range
 
-//in - operator
-//in is used check if a value exists in a collections / range
-
-//?:, ?, !! Operators
-//? is used to denote nullable variable
+##### ?:, ?, !! Operators
+? is used to denote nullable variable
+```kotlin
 var n0 : Int = null //throws error
 var n1 : Int? = null //ok!
-
 // ?: operator is elvis operator which can be used to execute an operation if the variable is not null
 //a==b is translated to a?.equals(b) ?: (b === null)
 //If the expression to the left of ?: is not null, the elvis operator returns it, otherwise it returns the expression to the right.
@@ -66,19 +65,17 @@ res ?: "Not ok"
 var res : String? = "a"
 res ?: "Not ok"
 //res12: kotlin.String = a
-
-
-//[], .., (), ===,!==, -> Operators
-//=== compares the value as well if the object is also same, the behaviour of (== and ===) might be same for primitive and data collection objects
+```
+##### [], .., (), ===,!==, -> Operators
+=== compares the value as well if the object is also same, the behaviour of (== and ===) might be same for primitive and data collection objects
+```kotlin
 val first = Integer(10)
 val second = Integer(10)
 
-//println(first == second)       //true
-//println(first.equals(second))  //true
-//println(first === second)      //false
-
-/*
- References
- Kotlin Operators https://kotlinlang.org/docs/reference/keyword-reference.html#operators-and-special-symbols
- Null Safety and how to use ?: https://kotlinlang.org/docs/reference/null-safety.html
- */
+println(first == second)       //true
+println(first.equals(second))  //true
+println(first === second)      //false
+```
+### References
+1. [Kotlin Operators](https://kotlinlang.org/docs/reference/keyword-reference.html#operators-and-special-symbols)
+2. [Null Safety and how to use ?:](https://kotlinlang.org/docs/reference/null-safety.html)

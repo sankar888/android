@@ -1,13 +1,30 @@
-//How to declare a variable in kotlin
+### Kotlin Variables and Data Types
+
+#### Variables
+##### val vs var
+In kotlin we can declare two types of variables,
+- variables whose value can be changed <code>var</code>
+- variables whose value cannot be changed after initialization <code>val</code>   
+```kotlin
+// Examples of changeable and unchangeable variables
 var a : Int = 2 //var is variable, Its value is changeable
+a = 5 //is allowed
+
 val b : Int = 3 //val values cannot be changed after initial assignment
-var c = 4 //t the type is inferred
+b = 7 // is not allowed, throws Error
+```
+
+#### Variables and Inferred Type   
+```kotlin
+var c = 4 //c is of type Int,the type is inferred
 var d: Int //delayed initialization is also valid
 d = 5
 val e: Int //deplayed initialization is not valid for val
 e = 6
+```
 
-//Data Types
+#### Data Types
+```kotlin
 // Byte, Short, Int, Long, Double, Float, Char, String
 var v0: Byte = 0B1011 //Byte type
 var v00: Byte = 123 //Byte type
@@ -36,3 +53,4 @@ var d1 : String = "here" //not possible
 
 var d2 : Int = 1
 var d2 : Int = 3 //not possible
+```
